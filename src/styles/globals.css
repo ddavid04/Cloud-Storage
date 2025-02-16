@@ -3,7 +3,8 @@
 * {
     font-family: "Poppins", Tahoma, sans-serif;
     font-weight: 400;
-    color: rgb(40,40,40)
+    color: rgb(40,40,40);
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -47,18 +48,17 @@ header{
 /**/
 /* DASHBOARD */
 .main-container{
-    display: flex;
+    /*display: flex;*/
 }
 
 main{
     background-color: rgb(250, 250, 250);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: auto;
     text-align: center;
 }
 
