@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,400&display=swap');
+
+* {
+    font-family: "Poppins", Tahoma, sans-serif;
+    font-weight: 400;
+    color: rgb(40,40,40)
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+h2{
+    padding: 25px;
+    font-size: 28px;
+}
+
+h4{
+    font-size: 25px;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(240,244,248);
+}
+/* HEADER */
+header{
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 647px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+}
+/**/
+/* DASHBOARD */
+.main-container{
+    display: flex;
+}
+
+main{
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    height: 100vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.main-search{
+    background-color: rgb(240,244,248);
+    border: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 0 0 60px 0;
+    border-radius: 30px;
+    color: rgb(95,99,104);
+    width: 60%;
+    text-align: center;
+}
+
+.uploads-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 370px);
+    gap: 20px;
+    justify-content: center;
+}
+/**/
+/* IMAGE CARD */
+.card{
+    background-color: rgb(240,244,248);
+    padding: 18px;
+    border-radius: 15px;
+}
+
+.title-container{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.display-image{
+    width: 100%;
+}
+
+.emoji{
+    color: rgb(85, 85, 246);
+}
+
+.control-container{
+    display: flex;
+    padding: 3px 0 0 3px;
+}
+.control-container input[type="checkbox"]{
+    margin-top: 13px;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+.control-container label{
+    margin-top: 5px;
+}
+
+.controls-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.control-container, .controls-container, button{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.drive-input{
+    width: 100%;
+    padding: 20px 15px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    color: #202124;
+    background-color: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.drive-input:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+.drive-input::placeholder {
+    color: #5f6368;
+    opacity: 1;
+}
+
+.card input{
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.download-btn {
+    margin: 10px 0;
+    background-color: #4285F4; /* Google's brand blue */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Slightly rounded corners */
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif; /* Google's preferred font */
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); /* Subtle shadow */
+}
+
+.download-btn:hover {
+    background-color: #357ABD; /* Slightly darker blue on hover */
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover */
+}
+
+.download-btn:active {
+    background-color: #2C5F9E; /* Even darker blue when active/clicked */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); /* Smaller shadow when active/clicked */
+}
+
+.download-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.5); /* Custom focus outline */
+}
+/**/
+/* VIDEO CARD*/
+.video-container{
+    margin-bottom: 5px;
+
+}
+/**/
+.new-button{
+    margin: 10px 30px;
+    padding: 22px;
+    border-radius: 15px;
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    box-shadow: rgba(50,50,93, 0.25) 0 2px 5px -1px, rgba(0,0,0,0.3) 0 1px 3px -1px;
+}
+
+.new-button:active{
+    background-color: rgb(236, 238, 241);
+    box-shadow: inset rgba(0,0,0,0.1) 1px 1px 0, inset rgba(0,0,0,0.7) 0 -1px 0;
+}
+
+.spinner {
+    width: 40px; /* Size of the spinner */
+    height: 40px; /* Size of the spinner */
+    border: 4px solid rgba(0, 0, 0, 0.1); /* Light border */
+    border-top: 4px solid #3498db; /* Blue color for the spinning part */
+    border-radius: 50%; /* Make it a circle */
+    animation: spin 1s linear infinite; /* Spin animation */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Start rotation */
+    }
+    100% {
+        transform: rotate(360deg); /* End rotation */
+    }
+}
+/**/
