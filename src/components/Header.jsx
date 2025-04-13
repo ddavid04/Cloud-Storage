@@ -12,7 +12,7 @@ export default function Header({onHandleNewUpload}) {
             />
             <h1>David's storage</h1>
             <CldUploadWidget
-                uploadPreset={'demo_drive'}
+                uploadPreset={process.env.NEXT_PUBLIC_CLOUDINARY_FOLDER_NAME}
                 onSuccess={(results) => {
                     console.log(results);
                     onHandleNewUpload(results.info)
